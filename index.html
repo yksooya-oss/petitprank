@@ -1,56 +1,107 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prank - Quishing</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #d9534f;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 30px auto;
-            flex-wrap: wrap;
-        }
-        .image-container img {
-            max-width: 45%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px auto;
-            color: #333;
-            max-width: 800px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vous vous êtes fait avoir !</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }.container {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff4d4d;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
+.warning {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 77, 77, 0.15);
+  border: 1px solid rgba(255, 77, 77, 0.3);
+  color: #ffd5d5;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #ff2e2e;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
 </head>
 <body>
-    <h1>⚠️ TU T'ES FAIT AVOIR !!</h1>
+  <div class="container">
+    <h1>Vous vous êtes fait avoir&nbsp;!</h1><p>
+  Ceci était un faux site de démonstration. Aucun piratage n’a été effectué,
+  mais cette expérience montre à quel point il est facile de se faire piéger
+  par une page qui semble crédible.
+</p>
 
-    <div class="image-container">
-        <!-- Image 1 : Main avec explosion -->
-        <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/d1/4c/fc/d14cfcc3-5496-4af5-9da1-b49d2b10993e/1482dd76-9005-4af3-9508-cd7044f5e633/4ada87e5-4fbf-41d2-b4a3-10c9da2500d8?sv=2025-01-05&spr=https&st=2026-05-12T07%3A16%3A31Z&se=2026-05-12T08%3A16%3A31Z&skoid=c9baccad-3639-4379-a088-07b7e349293c&sktid=4fbc1168-2984-4d17-af19-ac5138c2378e&skt=2026-05-12T07%3A16%3A31Z&ske=2026-05-12T08%3A16%3A31Z&sks=b&skv=2025-01-05&sr=b&sp=r&sig=00yltr3BmErn5NftMiF6sUtUGZ9MQ2O%2B%2BRURvkUogTI%3D" alt="Tu t'es fait avoir !">
+<p>
+  Le <strong>quishing</strong> est une technique de phishing utilisant des QR codes.
+  En scannant un code sans vérifier sa provenance, vous pouvez être redirigé vers
+  un faux site destiné à voler vos informations personnelles, mots de passe ou
+  données bancaires.
+</p>
 
-        <!-- Image 2 : Explication du quishing -->
-        <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/d1/4c/fc/d14cfcc3-5496-4af5-9da1-b49d2b10993e/1482dd76-9005-4af3-9508-cd7044f5e633/8e256a4b-104d-4a57-a67a-b1284acd6771?sv=2025-01-05&spr=https&st=2026-05-12T07%3A16%3A31Z&se=2026-05-12T08%3A16%3A31Z&skoid=c9baccad-3639-4379-a088-07b7e349293c&sktid=4fbc1168-2984-4d17-af19-ac5138c2378e&skt=2026-05-12T07%3A16%3A31Z&ske=2026-05-12T08%3A16%3A31Z&sks=b&skv=2025-01-05&sr=b&sp=r&sig=gM5BmPyvbYJDfFF3YxVRZIj3S9gulYVbDeSOAw8LmZI%3D" alt="Explication du quishing">
-    </div>
+<div class="warning">
+  Vérifiez toujours les liens avant de saisir des informations sensibles.
+  Méfiez-vous des QR codes inconnus ou reçus de manière inattendue.
+</div>
 
-    <p>
-        <strong>Attention !</strong> Ceci est une démonstration de <strong>quishing</strong> (phishing par QR code).
-        Ne scanne jamais un QR code suspect sans vérifier sa source !
-    </p>
+<a href="#" class="button" onclick="alert('Le meilleur moyen de se protéger est de rester vigilant !')">
+  J’ai compris
+</a>
+
+  </div>
 </body>
 </html>
